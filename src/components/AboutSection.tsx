@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import aboutClipart from "@/assets/about-clipart.png";
+import profilePhoto from "@/assets/sulove-profile.jpeg";
 
 const stats = [
   { value: "5+", label: "Years Experience" },
