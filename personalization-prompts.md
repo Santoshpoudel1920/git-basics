@@ -76,3 +76,21 @@ Services: <SERVICES_JSON>
 Experience: <EXPERIENCE_JSON>  
 Theme tokens: <TOKENS_JSON>  
 Constraints: edit only `src/content/portfolio.config.ts`, keep block ids/types unchanged, no component refactors.
+
+## Additional Change Examples (15)
+
+1. Update only `profile.role` to "<NEW_ROLE>" and keep every other field exactly the same.
+2. Replace only `profile.location` and `contactItems.location` with "<NEW_LOCATION>" for consistency.
+3. Set `profile.email` and every mailto link to "<NEW_EMAIL>" without touching display labels.
+4. Change hero tone to "job-seeking" by editing only hero heading, subheading, and primary CTA text.
+5. Change hero tone to "freelance" by editing only hero description and CTA URLs.
+6. Rewrite About section into first-person concise style (max 2 sentences per paragraph) and leave stats unchanged.
+7. Rewrite About section into third-person professional style while preserving paragraph count.
+8. Update skills percentages to realistic beginner-level values between 45 and 75, keeping skill names unchanged.
+9. Update skills percentages to senior-level values between 80 and 95, keeping skill names unchanged.
+10. Swap only two skills positions: "<SKILL_A>" and "<SKILL_B>"; keep all values and all other ordering intact.
+11. Replace only one experience item where title is "<OLD_TITLE>" with: title "<NEW_TITLE>", company "<NEW_COMPANY>", description "<NEW_DESC>".
+12. Keep experience dates unchanged, but rewrite all experience descriptions to include measurable outcomes (numbers/percentages).
+13. Update only contact section heading and intro to be recruiter-focused, keeping contact items and form fields untouched.
+14. Set all social links to open-source profile branding by updating only GitHub, LinkedIn, and Twitter URLs.
+15. Apply a monochrome theme by editing only theme color tokens in config; do not edit CSS utilities or components.
