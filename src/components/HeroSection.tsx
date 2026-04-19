@@ -66,13 +66,13 @@ export default function HeroSection({ block }: HeroSectionProps) {
           >
             <a
               href={block.primaryCta.href}
-              className="glass-card px-7 py-3.5 rounded-xl font-semibold text-sm hover:bg-white/20 transition-all duration-300"
+              className="glass-card px-7 py-3.5 rounded-xl font-semibold text-sm hover:bg-gray-700/20 hover:scale-105 wiggle transition-all duration-300"
             >
               {block.primaryCta.label}
             </a>
             <a
               href={block.secondaryCta.href}
-              className="glass-card px-7 py-3.5 rounded-xl font-semibold text-sm hover:bg-white/20 transition-all duration-300"
+              className="glass-card px-7 py-3.5 rounded-xl font-semibold text-sm hover:bg-gray-700/20 hover:scale-105 wiggle transition-all duration-300"
             >
               {block.secondaryCta.label}
             </a>
