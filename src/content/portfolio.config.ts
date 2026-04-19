@@ -20,25 +20,24 @@ const withBase = (path: string) => {
 
 // Quick-edit section: update these values first for most profile/theme changes.
 const profile = {
-  name: "Sagun",
-  role: "Full Stack Developer",
-  location: "Nepal",
-  email: "hello@sagun.dev",
-  linkedin: "linkedin.com/in/sagun",
-  twitterHandle: "@sagun",
+  name: "Santosh Sharma",
+  role: "UI/UX Designer & Lecturer",
+  location: "Milky Way Galaxy",
+  email: "santoshpoudel713@gmail.com",
+  linkedin: "linkedin.com/in/santosh-sharma-62a386300/",
 };
 
 const socialLinks = {
-  linkedin: "https://linkedin.com/in/sagun",
-  github: "https://github.com/sagun",
-  twitter: "https://twitter.com/sagun",
+  linkedin: "https://www.linkedin.com/in/santosh-sharma-62a386300/",
+  github: "https://github.com/Santoshpoudel1920",
+  behance: "https://www.behance.net/santoshpoudel4",
 };
 
 // Single source of truth for brand hue.
 // Change this one value to retheme all accent-driven UI parts.
-// Switched to a bluish-white direction per user request.
-const brandColor = "oklch(0.62 0.24 25)";
-const brandTextOnColor = "oklch(0.99 0.01 20)";
+// Using a grayscale palette for black/white/gray styling.
+const brandColor = "#000000";
+const brandTextOnColor = "#ffffff";
 
 const themeColors = {
   // Keep overrides minimal: all other tokens are derived from these in styles.css.
@@ -76,11 +75,10 @@ export const portfolioConfig: PortfolioConfig = {
     },
   },
   seo: {
-    title: `${profile.name} | Developer Portfolio`,
+    title: `${profile.name} | UI/UX Designer Portfolio`,
     description:
-      "Full Stack Developer building clean, performant web applications and digital products.",
+      "UI/UX designer and lecturer creating holistic systems, teaching with clarity, and helping startups and design teams bring intuitive digital products to life.",
     author: profile.name,
-    twitterSite: profile.twitterHandle,
     ogImage:
       "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/8a26296c-4b36-46bf-829e-0469bb62ecf2/id-preview-6db04203--557eecb1-1f64-4c35-842e-6bd4d1e84a18.lovable.app-1775816077576.png",
   },
@@ -96,7 +94,7 @@ export const portfolioConfig: PortfolioConfig = {
       headingPrefix: "Hi, I'm",
       headingHighlight: profile.name,
       description:
-        "I build fast, scalable web applications with modern frontend and backend technologies.",
+        "I design holistic systems and teach UX to help startups, design teams, and clients build products that feel intuitive, useful, and memorable.",
       primaryCta: {
         label: "Let's Connect",
         href: "#contact",
@@ -106,8 +104,8 @@ export const portfolioConfig: PortfolioConfig = {
         href: "#experience",
       },
       image: {
-        src: withBase("/images/hero-clipart.png"),
-        alt: "Developer illustration with modern software tooling icons",
+        src: withBase("/images/bnw-png.png"),
+        alt: `${profile.name} - ${profile.role}`,
         width: 1024,
         height: 1024,
       },
@@ -118,11 +116,11 @@ export const portfolioConfig: PortfolioConfig = {
       title: "About",
       titleHighlight: "Me",
       paragraphs: [
-        "I'm a developer focused on creating reliable, user-friendly applications with clean architecture and strong performance.",
-        "I enjoy turning ideas into products, from UI development to backend APIs, while keeping code maintainable and scalable.",
+        "I'm a UI/UX designer and lecturer who creates holistic systems, visual storytelling, and usable experiences for product teams.",
+        "I teach programming and design with simplicity, helping students learn complex concepts through visualization and practical workflows.",
       ],
       image: {
-        src: withBase("/images/sulove-profile.jpeg"),
+        src: "https://media.licdn.com/dms/image/v2/D4E03AQGvF7uesLLl9Q/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1721731067115?e=1778112000&v=beta&t=rXTa6EdrVbG7fILDq1e1up87fKkfBB23ixHkXubCfGM",
         alt: `${profile.name} - ${profile.role}`,
         width: 500,
         height: 600,
@@ -141,16 +139,13 @@ export const portfolioConfig: PortfolioConfig = {
       title: "My",
       titleHighlight: "Skills",
       subtitle:
-        "A modern engineering toolkit for shipping high-quality products.",
+        "Core strengths across design, teaching, and technical problem solving.",
       items: [
-        { name: "JavaScript / TypeScript", level: 92 },
-        { name: "React & Next.js", level: 90 },
-        { name: "Node.js & APIs", level: 88 },
-        { name: "SQL & Databases", level: 84 },
-        { name: "UI/UX Implementation", level: 86 },
-        { name: "Testing & QA", level: 80 },
-        { name: "Cloud & Deployment", level: 78 },
-        { name: "System Design", level: 82 },
+        { name: "Holistic UX Design", level: 94 },
+        { name: "Teaching & Mentorship", level: 92 },
+        { name: "Programming Fundamentals", level: 88 },
+        { name: "Communication & Leadership", level: 90 },
+        { name: "Critical Thinking", level: 96 },
       ],
       image: {
         src: withBase("/images/skills-clipart.png"),
@@ -165,37 +160,22 @@ export const portfolioConfig: PortfolioConfig = {
       title: "What I",
       titleHighlight: "Do",
       subtitle:
-        "End-to-end development services to take products from concept to launch.",
+        "Training, mentorship, and design support for creative teams and learners.",
       items: [
         {
-          icon: "💻",
-          title: "Frontend Development",
-          desc: "Responsive, accessible interfaces with React, TypeScript, and modern UI tooling.",
+          icon: "🎓",
+          title: "Training Sessions",
+          desc: "Interactive workshops on UX, design systems, and visual thinking for teams and students.",
         },
         {
-          icon: "⚙️",
-          title: "Backend APIs",
-          desc: "Robust API design, authentication, and business logic implementation.",
+          icon: "🤝",
+          title: "Mentorship",
+          desc: "Career guidance and portfolio coaching for aspiring UX designers and developers.",
         },
         {
-          icon: "🗄️",
-          title: "Database Design",
-          desc: "Efficient schemas, query optimization, and reliable data flows.",
-        },
-        {
-          icon: "🚀",
-          title: "Performance Optimization",
-          desc: "Speed, scalability, and code quality improvements for production systems.",
-        },
-        {
-          icon: "🔌",
-          title: "Integrations",
-          desc: "Third-party services, payment systems, and automation workflows.",
-        },
-        {
-          icon: "🧪",
-          title: "Maintenance & Support",
-          desc: "Ongoing improvements, bug fixing, and long-term product stability.",
+          icon: "🧠",
+          title: "Design Strategy",
+          desc: "Holistic system design advice for creating products that are usable, useful, and aligned to goals.",
         },
       ],
       image: {
@@ -210,31 +190,25 @@ export const portfolioConfig: PortfolioConfig = {
       type: "experience",
       title: "My",
       titleHighlight: "Journey",
-      subtitle: "Building software products with impact and reliability.",
+      subtitle: "Teaching, designing, and mentoring across product and academic spaces.",
       items: [
         {
           year: "2024 - Present",
-          role: "Full Stack Developer",
-          company: "Freelance",
-          desc: "Delivering full-stack web solutions for startups and small businesses.",
+          role: "CS Lecturer",
+          company: "Undergraduate Computer Science Program",
+          desc: "Teaching C, C++, Java, Python, compiler design, operating systems, and software engineering with clear visual explanations.",
         },
         {
           year: "2022 - 2024",
-          role: "Frontend Developer",
-          company: "Product Studio",
-          desc: "Built reusable UI systems and improved application performance and accessibility.",
+          role: "UI/UX Designer",
+          company: "Freelance Clients",
+          desc: "Designing polished product experiences and user flows for startups and creative teams.",
         },
         {
           year: "2021 - 2022",
-          role: "Web Developer",
-          company: "Tech Agency",
-          desc: "Implemented business websites and API integrations with clean deployment pipelines.",
-        },
-        {
-          year: "2020 - 2021",
-          role: "Junior Developer",
-          company: "Startup Team",
-          desc: "Contributed to feature development, debugging, and production support.",
+          role: "Design Mentor",
+          company: "Portfolio Workshops",
+          desc: "Coaching aspiring designers to communicate ideas clearly and build stronger portfolios.",
         },
       ],
     },
@@ -244,7 +218,7 @@ export const portfolioConfig: PortfolioConfig = {
       title: "Let's",
       titleHighlight: "Talk",
       subtitle:
-        "Need a developer for your next product or feature? Let's build something great together.",
+        "Need a design mentor, training session, or UX collaborator? Let's connect and bring your ideas to life.",
       cardTitle: "Send a Message",
       submitLabel: "Send Message",
       successMessage: "Thanks for your message. I will get back to you soon.",
@@ -267,7 +241,7 @@ export const portfolioConfig: PortfolioConfig = {
       socialLinks: [
         { label: "LinkedIn", href: socialLinks.linkedin },
         { label: "GitHub", href: socialLinks.github },
-        { label: "Twitter", href: socialLinks.twitter },
+        { label: "Behance", href: socialLinks.behance },
       ],
       copyrightText: "All rights reserved.",
     },

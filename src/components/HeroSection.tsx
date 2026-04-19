@@ -66,13 +66,13 @@ export default function HeroSection({ block }: HeroSectionProps) {
           >
             <a
               href={block.primaryCta.href}
-              className="bg-primary text-primary-foreground px-7 py-3.5 rounded-xl font-semibold text-sm hover:bg-primary/90 hover:scale-105 transition-all duration-300 glow-coral"
+              className="glass-card px-7 py-3.5 rounded-xl font-semibold text-sm hover:bg-white/20 transition-all duration-300"
             >
               {block.primaryCta.label}
             </a>
             <a
               href={block.secondaryCta.href}
-              className="glass-card text-foreground px-7 py-3.5 rounded-xl font-semibold text-sm hover:bg-input hover:scale-105 transition-all duration-300"
+              className="glass-card px-7 py-3.5 rounded-xl font-semibold text-sm hover:bg-white/20 transition-all duration-300"
             >
               {block.secondaryCta.label}
             </a>
@@ -82,18 +82,25 @@ export default function HeroSection({ block }: HeroSectionProps) {
         <motion.div
           initial={{ opacity: 0, scale: 0.8, rotate: -5 }}
           animate={{ opacity: 1, scale: 1, rotate: 0 }}
-          transition={{ duration: 0.8, delay: 0.3, type: "spring", stiffness: 100 }}
+          transition={{
+            duration: 0.8,
+            delay: 0.3,
+            type: "spring",
+            stiffness: 100,
+          }}
           className="flex justify-center"
         >
           <div className="relative animate-float">
-            <div className="absolute inset-0 rounded-3xl bg-coral/10 blur-2xl scale-90 animate-pulse-glow" />
-            <img
-              src={block.image.src}
-              alt={block.image.alt}
-              width={block.image.width ?? 1024}
-              height={block.image.height ?? 1024}
-              className="w-full max-w-md md:max-w-lg relative z-10"
-            />
+            <div className="absolute inset-0 rounded-full bg-coral/10 blur-2xl scale-90 animate-pulse-glow" />
+            <div className="relative w-72 h-72 rounded-full overflow-hidden border border-white/15 shadow-[0_40px_80px_rgba(0,0,0,0.15)] bg-slate-100">
+              <img
+                src={block.image.src}
+                alt={block.image.alt}
+                width={block.image.width ?? 1024}
+                height={block.image.height ?? 1024}
+                className="h-full w-full object-cover"
+              />
+            </div>
           </div>
         </motion.div>
       </div>
